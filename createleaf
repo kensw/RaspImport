@@ -1,0 +1,5 @@
+username="$1"
+password="$2"
+leafname="$3"
+
+sudo python createtable.py $username $password $leafname

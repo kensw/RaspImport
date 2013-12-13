@@ -1,0 +1,9 @@
+username="$1"
+password="$2"
+branchname="$3"
+leafname="$4"
+
+sudo modprobe w1-gpio
+sudo modprobe w1-therm
+
+sudo python findleaf.py $username $password $branchname $leafname
